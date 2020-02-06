@@ -1,0 +1,19 @@
+{
+  "name": "calculator",
+  "version": "0.0.1",
+  "description": "A loan and lease calculator built for rsshools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeaRRRRR/calculator.git"
+  },
+  "author": "BeaRRRRR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeaRRRRR/calculator/issues"
+  },
+  "homepage": "https://github.com/BeaRRRRR/calculator#readme"
+}
