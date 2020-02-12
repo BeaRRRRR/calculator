@@ -1,0 +1,71 @@
+.Calculator {
+    
+    .tabs {
+        display: flex;
+        justify-content: center;
+
+        .tab {
+            font-family: Source Sans Pro,Helvetica,sans-serif;
+            text-align: center;
+
+            background: #ffff;
+
+            cursor: pointer;
+
+            margin: 0;
+            margin-right: 30px !important;
+
+            border: 0;
+            border-bottom-style: none;
+            border-bottom: 5px solid white;
+
+            font-size: 1.6em;
+            line-height: 2.8em;
+
+            padding-left: 30px;
+            padding-right: 30px;
+
+            &.active, {
+                border-color: #a400b4;
+            }
+
+        } 
+    }
+
+    .payment {
+        display: flex;
+        justify-content: center;
+
+        border-bottom: 1px solid#e1e1e1;
+        border-top: 1px solid#e1e1e1;
+
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+        p {
+            font-size: 1.6rem;
+            line-height: 0;
+        }
+
+        strong {
+           font-size: 28px;
+        }
+        
+        & > div {
+            font-size: 2rem;
+        }
+
+        .estimated {
+            border-right: 1px solid #e1e1e1;
+            padding-right: 20px;
+                      
+            p {
+                margin-right: 30px;
+            }
+        }
+
+        .car-price {
+            margin-left: 30px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.Lease {
+    .inputs-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        .input-group {
+            border-bottom: 1px solid#e1e1e1;
+            padding: 16px;
+
+            p {
+                display: inline;
+
+                font-family: Source Sans Pro,Helvetica,sans-serif;
+                font-weight: 600;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+
+                padding-top: .9rem;
+                margin-right: 30px;
+
+                &.validation {
+                    color: red;
+                }
+            } 
+
+            label {
+
+                input {
+                    font-size: 2rem;
+                    border-bottom: 3px solid #098ae4 !important;
+                    color:#098ae4;
+                    font-family: Source Sans Pro,Helvetica,sans-serif;
+                    font-weight: 400;
+                    max-width: 120px;
+                    border: none
+                }
+
+                span {
+                    font-size: 2rem;
+                    font-family: Source Sans Pro,Helvetica,sans-serif;
+                    color:#098ae4;
+                    border-bottom: 3px solid#098ae4 !important;
+                    padding-bottom: 1.2%;
+                }
+
+            }
+
+        }
+    }
+    .calculate {
+        display: block;
+    }
+}
+
+                

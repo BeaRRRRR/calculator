@@ -1,0 +1,23 @@
+.App {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    & > h1 {
+        text-align: center;
+        font-weight: 400;
+        color: #532380;
+        line-height: 1;
+        font-family: Effra Bold,Helvetica Neue,HelveticaNeue,Helvetica-Neue,sans-serif;
+        font-size: 2.5rem;
+    }
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}

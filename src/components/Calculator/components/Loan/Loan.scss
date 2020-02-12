@@ -1,0 +1,92 @@
+.Loan {
+    .inputs-row {
+
+        .input-group {
+            border-bottom: 1px solid#e1e1e1;
+            padding: 16px;
+
+            p {
+                display: inline;
+
+                font-family: Source Sans Pro,Helvetica,sans-serif;
+                font-weight: 600;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+
+                padding-top: .9rem;
+                margin-right: 30px;
+
+                &.validation {
+                    color: red;
+                }
+ 
+            } 
+
+            label {
+
+                input {
+                    font-size: 2rem;
+                    border-bottom: 3px solid #098ae4 !important;
+                    color:#098ae4;
+                    font-family: Source Sans Pro,Helvetica,sans-serif;
+                    font-weight: 400;
+                    max-width: 120px;
+                    border: none
+                }
+
+                span {
+                    font-size: 2rem;
+                    font-family: Source Sans Pro,Helvetica,sans-serif;
+                    color:#098ae4;
+                    border-bottom: 3px solid#098ae4 !important;
+                    padding-bottom: 1%;
+                }
+
+            }
+
+
+            
+            .button {
+                width: 25%;
+                height: 50px;
+
+                background: none;
+
+                border: 1px solid #a400b4;
+
+                &.active {
+                    color: #a400b4;
+                }
+
+                &:first-child {
+                    border-bottom-left-radius: 5px;
+                    border-top-left-radius: 5px;
+                }
+
+                &:last-child {
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+                &:nth-child(2), &:nth-child(3){
+                    border-left-width: 0;
+                }
+                &:nth-child(3) {
+                    border-right-width: 0;
+                }
+            }
+           
+
+            .credit-score {
+                .button {
+                    &.active {
+                        color: #a400b4;
+                    }
+                }
+            }
+        }
+    }
+    .calculate {
+        display: block;
+    }
+}
