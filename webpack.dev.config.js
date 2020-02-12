@@ -8,8 +8,6 @@ module.exports = {
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
 
-    watch: true,
-
     entry: './src/index.tsx',
 
     // and output it into /dist as bundle.js
