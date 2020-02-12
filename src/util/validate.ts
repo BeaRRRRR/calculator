@@ -9,7 +9,7 @@ export function validateTradeIn(tradeIn: number, msrp: number) {
 
 
 export function validateApr(apr: number): boolean {
-    if (apr > 0 && apr < 100) return true;
+    if (apr >= 0 && apr <= 100) return true;
     return false
 }
 

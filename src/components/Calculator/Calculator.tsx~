@@ -17,11 +17,11 @@ function Calculator({ msrp, setMontlyPayment, postCode, setPostCode }: Calculato
     const [loanPrice, setLoanPrice]: [number, Function] = useState(0);
     const [leasePrice, setLeasePrice]: [number, Function] = useState(0);
 
-    const [term, setTerm]: [number, Function] = useState(parseInt(localStorage.getItem('term') || '12'));
-    const [creditScore, setCreditScore]: [number, Function] = useState(parseInt(localStorage.getItem('creditScore') || '750'));
-    const [downPayment, setDownPayment]: [number, Function] = useState(parseInt(localStorage.getItem('downPayment') || '0'));
-    const [tradeIn, setTradeIn]: [number, Function] = useState(parseInt(localStorage.getItem('tradeIn') || '0'));
-    const [apr, setApr]: [number, Function] = useState(parseInt(localStorage.getItem('apr') || '0'));
+    const [term, setTerm]: [number, Function] = useState(12)
+    const [creditScore, setCreditScore]: [number, Function] = useState(750);
+    const [downPayment, setDownPayment]: [number, Function] = useState(0);
+    const [tradeIn, setTradeIn]: [number, Function] = useState(0);
+    const [apr, setApr]: [number, Function] = useState(0);
     const [mileage, setMileage]: [number, Function] = useState(12000);
 
 
@@ -39,26 +39,6 @@ function Calculator({ msrp, setMontlyPayment, postCode, setPostCode }: Calculato
     useEffect(() => {
         setMontlyPayment(loanPrice);
     }, [loanPrice]);
-
-    useEffect(() => {
-        localStorage.setItem('term', term.toString());
-    }, [term]);
-
-    useEffect(() => {
-        localStorage.setItem('creditScore', creditScore.toString());
-    }, [creditScore]);
-
-    useEffect(() => {
-        localStorage.setItem('downPayment', downPayment.toString());
-    }, [downPayment])
-
-    useEffect(() => {
-        localStorage.setItem('tradeIn', tradeIn.toString());
-    }, [tradeIn]);
-
-    useEffect(() => {
-        localStorage.setItem('apr', apr.toString());
-    }, [apr])
 
 
     return (

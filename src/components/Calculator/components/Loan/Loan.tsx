@@ -58,10 +58,10 @@ function Loan({
                         <p>Down Payment</p>
                         <span>$</span>
                         <input type="text"
-                            defaultValue={0}
+                            defaultValue={downPayment}
                             onInput={(e) => {
                                 const target = e.target as HTMLInputElement;
-                                const value = parseInt(target.value);
+                                const value = parseInt(target.value) || 0;
                                 setDownPayment(value)
                                 if (validateDownPayment(value, msrp)) {
                                     setPrice();
@@ -82,10 +82,10 @@ function Loan({
                         <p>Trade in</p>
                         <span>$</span>
                         <input type="text"
-                            defaultValue={0}
+                            defaultValue={tradeIn}
                             onInput={(e) => {
                                 const target = e.target as HTMLInputElement;
-                                const value = parseInt(target.value);
+                                const value = parseInt(target.value) || 0;
                                 setTradeIn(value);
                                 if (validateTradeIn(value, msrp)) {
                                     setPrice();
@@ -105,7 +105,7 @@ function Loan({
                     <label>
                         <p>APR</p>
                         <input type="text"
-                            defaultValue={0}
+                            defaultValue={apr}
                             min={0}
                             max={100}
                             onInput={(e) => {
